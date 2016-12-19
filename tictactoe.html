@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Lucas Childers | tic_tac_toe.js</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>     
+    <script src="tic.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div id='heading'>tic_tac_toe.js</div>
+    <div id="link"><a href="https://github.com/lucaschilders" target="_blank">github</a></div>
+    
+    <div id="scoreWrapper">
+        <div id="scoreLeft"></div>
+        <div id="scoreRight"></div>
+    </div>
+    
+    <div id='board'>    
+      <table>
+        <tr>
+          <td class="piece" id="1"></td>
+          <td class="piece" id="2"></td>
+          <td class="piece" id="3"></td>
+        </tr>
+        <tr>
+          <td class="piece" id="4"></td>
+          <td class="piece" id="5"></td>
+          <td class="piece" id="6"></td>
+        </tr>
+        <tr>
+          <td class="piece" id="7"></td>
+          <td class="piece" id="8"></td>
+          <td class="piece" id="9"></td>
+        </tr>
+      </table>
+      <div id='status'></div>
+      <div id="buttonWrapper"><input type="button" onclick="clearBoard();$(this).fadeOut();" id="reset" value="reset!"/></div>
+    </div>
+</body>
+
+</html>

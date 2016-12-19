@@ -1,0 +1,109 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 12px;
+    text-align: center;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #AED6F1;
+    text-align: center;
+    width: 35%;
+}
+
+#heading {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#scoreWrapper {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 24px;
+    display: inline-block;
+    width: 100%;
+}
+
+#scoreLeft {
+    margin: 0 auto;
+    float: left;
+    display: inline;
+}
+
+#scoreRight {
+    margin: 0 auto;
+    float: right;
+    display: inline;
+}
+
+#link {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+#board {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#status {
+    margin: 0 auto;
+    text-align: center;
+    margin: 12px;
+    font-size: 2em;
+}
+
+#buttonWrapper {
+    margin: 0 auto;
+    margin-top: 12px;
+    text-align: center;
+}
+
+#reset {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  border-width: 0;
+  font-family: Arial;
+  color: black;
+  font-size: 20px;
+  background: #85C1E9;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+#reset:hover {
+  background: #5DADE2;
+  transition: .75s;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border:1px solid #000000;
+  background-color: white;
+  margin: 0 auto;
+  font-size: 5em;
+}
+
+table td {
+  border:1px solid #000000;
+  text-align: center;
+}
+
+img {
+    width: 120px;
+}
+
+.piece {
+  width: 130px;
+  height: 130px;
+}
