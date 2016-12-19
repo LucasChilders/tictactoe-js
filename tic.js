@@ -3,6 +3,8 @@
     12/19/2016
     
     * Needs better clickdown, clickup, async event handling, right click can cheat
+    * Mobile scaling
+    * AI
 */
 
 B = ""
@@ -39,9 +41,18 @@ function checkWin() {
             if (gameBoard[y][1] == curPiece && gameBoard[y][2] == curPiece) {
                 $(".piece").removeAttr('style');
                 
-                $("#" + coordToInt(y, 0)).css("background-color", "#A3E4D7");
-                $("#" + coordToInt(y, 1)).css("background-color", "#A3E4D7");
-                $("#" + coordToInt(y, 2)).css("background-color", "#A3E4D7");
+                $("#" + coordToInt(y, 0)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
+                $("#" + coordToInt(y, 1)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
+                $("#" + coordToInt(y, 2)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
                 
                 $("#status").html(translate(curPiece) + ", you win!");
                 
@@ -59,9 +70,18 @@ function checkWin() {
             if (gameBoard[1][x] == curPiece && gameBoard[2][x] == curPiece) {
                 $(".piece").removeAttr('style');
                 
-                $("#" + coordToInt(0, x)).css("background-color", "#A3E4D7");
-                $("#" + coordToInt(1, x)).css("background-color", "#A3E4D7");
-                $("#" + coordToInt(2, x)).css("background-color", "#A3E4D7");
+                $("#" + coordToInt(0, x)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
+                $("#" + coordToInt(1, x)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
+                $("#" + coordToInt(2, x)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
                 
                 $("#status").html(translate(curPiece) + ", you win!");
                 curPiece == 1 ? xScore++ : oScore++;
@@ -77,9 +97,18 @@ function checkWin() {
         if (gameBoard[1][1] == curPiece && gameBoard[2][2] == curPiece) {
             $(".piece").removeAttr('style');
             
-            $("#" + coordToInt(0, 0)).css("background-color", "#A3E4D7");
-            $("#" + coordToInt(1, 1)).css("background-color", "#A3E4D7");
-            $("#" + coordToInt(2, 2)).css("background-color", "#A3E4D7");
+            $("#" + coordToInt(0, 0)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
+            $("#" + coordToInt(1, 1)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
+            $("#" + coordToInt(2, 2)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
             
             $("#status").html(translate(curPiece) + ", you win!");
             curPiece == 1 ? xScore++ : oScore++;
@@ -94,9 +123,18 @@ function checkWin() {
         if (gameBoard[1][1] == curPiece && gameBoard[0][2] == curPiece) {
             $(".piece").removeAttr('style');
             
-            $("#" + coordToInt(2, 0)).css("background-color", "#A3E4D7");
-            $("#" + coordToInt(1, 1)).css("background-color", "#A3E4D7");
-            $("#" + coordToInt(0, 2)).css("background-color", "#A3E4D7");
+            $("#" + coordToInt(2, 0)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
+            $("#" + coordToInt(1, 1)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
+            $("#" + coordToInt(0, 2)).css({
+                    "background-color" : "#A3E4D7",
+                    "transition" : "1.5s"
+                });
             
             $("#status").html(translate(curPiece) + ", you win!");
             curPiece == 1 ? xScore++ : oScore++;
@@ -195,7 +233,12 @@ $( document ).ready(function() {
             }
         
             else if (checkBoardFull()) {
-                alert("Cats game!");
+                $("#status").html("Tie game!"); 
+                $(".piece").css({
+                    "background-color" : "#F5B7B1",
+                    "transition" : "1.5s"
+                });
+                $("#reset").fadeIn();
             }
         
             else {
