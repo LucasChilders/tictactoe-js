@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
     background-color: #AED6F1;
     text-align: center;
-    width: 100%;
+    width: 466px;
 }
 
 #heading {
@@ -29,7 +29,7 @@ a {
     font-size: 1.5em;
     margin-bottom: 24px;
     display: inline-block;
-    width: 35%;
+    width: 100%;
 }
 
 #scoreLeft {
