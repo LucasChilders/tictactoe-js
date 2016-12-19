@@ -79,6 +79,7 @@ a {
 }
 
 #reset {
+    -webkit-appearance: none;
   -webkit-border-radius: 7;
   -moz-border-radius: 7;
   border-radius: 7px;
