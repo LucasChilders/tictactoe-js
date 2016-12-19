@@ -157,6 +157,7 @@ function checkBoardFull() {
 }
 
 function clearBoard() {
+    $("#reset").fadeOut();
 	$(".piece").html("");  
     $(".piece").css({
         "background-color" : "white",
@@ -169,7 +170,8 @@ function clearBoard() {
         [0, 0, 0],
     ];
     move = 0;
-    $("#status").html((move == 0 ? "X" : "O") + ", " + moveStrings[Math.floor(Math.random()*moveStrings.length)]);    
+    $("#status").html((move == 0 ? "X" : "O") + ", " + moveStrings[Math.floor(Math.random()*moveStrings.length)]);  
+    $(".piece").css("pointer-events", "auto");
     return;
 }
 
@@ -224,6 +226,7 @@ $( document ).ready(function() {
             // Check for win, reset board
             if (checkWin()) {
                 // Display button
+                $(".piece").css("pointer-events", "none");
                 $("#scoreLeft").html("X: " + (xScore == 0 ? "none!" : xScore));
                 $("#scoreRight").html("O: " + (oScore == 0 ? "none!" : oScore));                
                 $("#reset").fadeIn();

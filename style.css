@@ -2,6 +2,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     margin-top: 12px;
     text-align: center;
+    color: #1B2631;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #566573;
 }
 
 #scoreWrapper {
@@ -51,6 +53,13 @@ a {
 #board {
     width: 85%;
     margin: 0 auto;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
 }
 
 #status {
