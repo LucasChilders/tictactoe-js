@@ -1,4 +1,4 @@
 # tictactoe-js
 The game, TicTacToe, executed in JavaScript & jQuery on an elegant page
 
-(Check it out!)[https://lucaschilders.github.io/tictactoe-js/]
+[Check it out!](https://lucaschilders.github.io/tictactoe-js/)
