@@ -6,6 +6,9 @@ html {
     width: 475px;
     height: 700px;
     margin: 0 auto;
+    
+    overflow-x: hidden; 
+    overflow-y: auto;
 }
 
 body {
@@ -13,6 +16,9 @@ body {
     background-color: #AED6F1;
     text-align: center;
     width: 400px;
+    
+    overflow-x: hidden; 
+    overflow-y: auto;
 }
 
 #heading {
