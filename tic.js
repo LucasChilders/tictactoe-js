@@ -157,7 +157,7 @@ function checkBoardFull() {
 }
 
 function clearBoard() {
-    $("#reset").fadeOut();
+    //$("#reset").fadeOut();
 	$(".piece").html("");  
     $(".piece").css({
         "background-color" : "white",
@@ -186,9 +186,13 @@ function updateBoard(loc, piece) {
 }
 
 $( document ).ready(function() {
+    $(document).on("contextmenu", function() {
+        return false;
+    });
+    
     var loc;
     var valid = false;
-    $("#reset").hide();
+    $("#reset").fadeIn();
     $("#status").html((move == 0 ? "X" : "O") + ", " + moveStrings[Math.floor(Math.random()*moveStrings.length)]); 
     $("#scoreLeft").html("X: " + (xScore == 0 ? "none!" : xScore));
     $("#scoreRight").html("O: " + (oScore == 0 ? "none!" : oScore));
@@ -229,7 +233,7 @@ $( document ).ready(function() {
                 $(".piece").css("pointer-events", "none");
                 $("#scoreLeft").html("X: " + (xScore == 0 ? "none!" : xScore));
                 $("#scoreRight").html("O: " + (oScore == 0 ? "none!" : oScore));                
-                $("#reset").fadeIn();
+                //$("#reset").fadeIn();
                 
                 
                 //clearBoard();
@@ -241,7 +245,7 @@ $( document ).ready(function() {
                     "background-color" : "#F5B7B1",
                     "transition" : "1.5s"
                 });
-                $("#reset").fadeIn();
+                //$("#reset").fadeIn();
             }
         
             else {

@@ -6,7 +6,8 @@ html {
     width: 475px;
     height: 700px;
     margin: 0 auto;
-    overflow: hidden;
+    background-color: #85C1E9;
+    padding-top: 12px;
 }
 
 body {
@@ -14,6 +15,9 @@ body {
     background-color: #AED6F1;
     text-align: center;
     width: 400px;
+    padding: 12px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 #heading {
