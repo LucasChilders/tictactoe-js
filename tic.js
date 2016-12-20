@@ -1,10 +1,6 @@
 /*
     Lucas Childers
     12/19/2016
-    
-    * Needs better clickdown, clickup, async event handling, right click can cheat
-    * Mobile scaling
-    * AI
 */
 
 B = ""
