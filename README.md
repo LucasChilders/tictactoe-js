@@ -9,3 +9,4 @@ Todo
 * Async event handling
 * Mobile scaling
 * AI
+* Not possible to win detection
