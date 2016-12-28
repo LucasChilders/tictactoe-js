@@ -11,4 +11,4 @@ Todo
 * AI
 * Not possible to win detection
 
-[SnowStorm](http://www.schillmania.com/projects/snowstorm/) License found [here](http://www.schillmania.com/projects/snowstorm/license.txt)
+[SnowStorm](http://www.schillmania.com/projects/snowstorm/) license found [here](http://www.schillmania.com/projects/snowstorm/license.txt)
